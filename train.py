@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 from model import LinearRegressionGD
+import pickle
 
 np.random.seed(42)
 X = 5 * np.random.rand(100, 1) 
@@ -31,3 +32,18 @@ model = LinearRegressionGD(learning_rate=0.1, n_iterations=200)
 model.fit(X_train_scaled, y_train)
 
 print(f"Training completed. Weights : {model.weights[0]:.2f}, Bias : {model.bias:.2f}")
+
+# save test data for evaluation
+test_df.to_csv('test_data.csv', index=False)
+
+# save model and scaling parameters for evaluation
+artefacts = {
+    'model': model,
+    'x_mean': x_mean,
+    'x_std': x_std
+}
+
+with open('model_artefacts.pkl', 'wb') as f:
+    pickle.dump(artefacts, f)
+
+print("Model and test data saved for evaluation.")
