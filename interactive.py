@@ -21,7 +21,7 @@ print("==========================================")
 while True:
     print("\n--- Please answer 7 simple questions ---")
     try:
-        exp = float(input("1. How many years of professional experience do you have? (e.g., 5): "))
+        exp = float(input("1. How many years of professional experience do you have? (e.g : 5): "))
         
         print("\n   [1] High School   [2] Bachelor's   [3] Master's   [4] PhD")
         edu = float(input("2. What is your highest education level? (Enter 1, 2, 3, or 4): "))
