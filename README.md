@@ -1,4 +1,4 @@
-# 💰 Multi-Feature Salary Predictor (Gradient Descent From Scratch)
+# Paymo💰 - Multi-Feature Salary Predictor (Gradient Descent From Scratch)
 
 ## Project Overview
 This project implements a **Multivariate Linear Regression model from scratch** using Gradient Descent, relying only on `numpy` for core mathematical operations. It predicts an employee's salary based on 7 distinct features (experience, education, management role, etc.).
@@ -24,10 +24,12 @@ This repository was built to demonstrate a deep understanding of core Machine Le
 
 ## How to Install
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/Zineeddine-Abd/Paymo.git](https://github.com/Zineeddine-Abd/Paymo.git)
-   cd Paymo
+1.**Clone the repository:**
+
+```bash
+git clone https://github.com/Zineeddine-Abd/Paymo.git
+cd Paymo
+```
 
 ## 📦 Install dependencies
 
